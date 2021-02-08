@@ -17,7 +17,7 @@ public class NumList_01 {
 		for(int i = 0 ; i < 100 ; i++) {
 			int num1 = i + 1;
 			System.out.print(num1 + ",");
-			if(num1 % 5 == 0); {
+			if(num1 % 5 == 0) {
 				System.out.println();
 			}
 		}
@@ -34,7 +34,7 @@ public class NumList_01 {
 			// 6   7   8   9   10
 			// 11  12  13  14  15
 			System.out.print(num1 + "\t");
-			if(num1 % 5 == 0); {
+			if(num1 % 5 == 0) {
 				System.out.println();
 			}
 		}
