@@ -18,12 +18,22 @@ public class Score_06 {
 		System.out.println("각 과목의 성적을 입력하세요");
 		
 		for(int i = 0 ; i < 3 ; i++) {
-			
 			System.out.print(strSubject[i] + " : ");
-			intScore[i] = scan. nextInt();
-			
+			intScore[i] = scan.nextInt();
 		}
 		
+		/*
+		 * int sum = 0;
+		 * sum = intScore[0];
+		 * sum += intScore[1];
+		 * sums += intScore[2];
+		 * System.out.println(sum);
+		 */
+		int intSum = 0;
+		for(int i = 0; i < 3 ; i++) {
+			intSum += intScore[i];
+		}
+		System.out.println(intSum);
 	}
 
 }
