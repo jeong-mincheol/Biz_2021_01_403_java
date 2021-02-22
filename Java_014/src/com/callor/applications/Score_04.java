@@ -15,9 +15,9 @@ public class Score_04 {
 		String[] strName = new String[] {"홍길동","이몽룡","성춘향"};
 		
 		for(int index = 0 ; index < strName.length ; index++) {
-			intKor[index] = rnd.nextInt(100);
-			intEng[index] = rnd.nextInt(100);
-			intMath[index] = rnd.nextInt(100);
+			intKor[index] = rnd.nextInt(100)+1;
+			intEng[index] = rnd.nextInt(100)+1;
+			intMath[index] = rnd.nextInt(100)+1;
 		}
 		
 		System.out.println("====================================");
