@@ -15,7 +15,7 @@ public class HomeWork_01 {
 		
 		// 배열num에 2 ~ 101 사이의 무작위 정수를 넣는다
 		for(int i = 0 ; i < num.length ; i++ ) {
-			num[i] = rnd.nextInt(100) + 2;
+			num[i] = rnd.nextInt(1000) + 2;
 		}
 		
 		// PrimeServiceV2 클래스를 선언
