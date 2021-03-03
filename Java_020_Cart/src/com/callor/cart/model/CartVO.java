@@ -13,7 +13,7 @@ public class CartVO {
 	private int price;
 	private int total;
 	
-	// private화 한 인스턴스 변수들에 값을 저장하고 내보내는 getter & setter
+	// private화 한 인스턴스 변수들에 값을 저장하고 내보내는 (읽고 쓰게하기 위해) getter & setter
 	public String getUserName() {
 		return UserName;
 	}
