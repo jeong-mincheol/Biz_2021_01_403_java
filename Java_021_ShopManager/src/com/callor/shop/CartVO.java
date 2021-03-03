@@ -1,30 +1,28 @@
-package com.callor.cart.model;
+package com.callor.shop;
 
 public class CartVO {
 	
-	// 인스턴수 변수 선언
-	// 프로젝트를 만드는데 필요한 데이터를 생각 : 추상화
-	// 인스턴스 변수를 private 화 : 은닉
-	private String UserName;
-	private String proName;
+	// 장바구니에 필요한 데이터 인스턴스 변수 선언 : 추상화
+	// 인스턴스 변수 priavte화 : 은닉
+	private String userName;
+	private String productName;
 	private String date;
 	private String time;
 	private int qty;
 	private int price;
 	private int total;
-	
 	// private화 한 인스턴스 변수들에 값을 저장하고 내보내는 getter & setter
 	public String getUserName() {
-		return UserName;
+		return userName;
 	}
 	public void setUserName(String userName) {
-		UserName = userName;
+		this.userName = userName;
 	}
-	public String getProName() {
-		return proName;
+	public String getProductName() {
+		return productName;
 	}
-	public void setProName(String proName) {
-		this.proName = proName;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 	public String getDate() {
 		return date;
@@ -57,14 +55,9 @@ public class CartVO {
 		this.total = total;
 	}
 	@Override
-	// toSTring을 호출하면 VO 데이터를 나열해준다
-	// method에서 어떠한 일을 하는지는 모르지만 이런 값을 return해서 표시해줄 수 있다 : 캡슐화
 	public String toString() {
-		return "CartVO [UserName=" + UserName + ", proName=" + proName + ", date=" + date + ", time=" + time + ", qty="
-				+ qty + ", price=" + price + ", total=" + total + "]";
+		return "ShopVO [userName=" + userName + ", productName=" + productName + ", date=" + date + ", time=" + time
+				+ ", qty=" + qty + ", price=" + price + ", total=" + total + "]";
 	}
-	
-	
-	
 
 }
