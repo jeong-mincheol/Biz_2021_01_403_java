@@ -88,8 +88,7 @@ public class CartServiceV1 implements CartService {
 			allTotal += cartList.get(i).getTotal();
 		}
 		System.out.println("-----------------------------------------------");
-		System.out.printf("%s\t%s\t%d\n",
-				"합계", nSize + "가지", allTotal);
+		System.out.printf("합계\t%d가지\t%d\n", nSize, allTotal);
 		System.out.println("===============================================");
 	}
 
@@ -118,8 +117,7 @@ public class CartServiceV1 implements CartService {
 			}
 		}
 		System.out.println("-----------------------------------------------");
-		System.out.printf("%s\t%s\t%d\n",
-				"합계", num + "가지", allTotal);
+		System.out.printf("합계\t%d가지\t%d\n", num, allTotal);
 		System.out.println("===============================================");
 	}
 
