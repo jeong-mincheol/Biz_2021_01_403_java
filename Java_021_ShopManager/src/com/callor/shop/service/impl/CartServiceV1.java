@@ -9,6 +9,8 @@ import com.callor.shop.service.CartService;
 
 public class CartServiceV1 implements CartService {
 	
+	// 인스턴스 변수에 생성하는것과 선언하는것이 나뉜 이유는
+	// 메모리 관리 때문인데
 	private Scanner scan;
 	private List<CartVO> cartList;
 	public CartServiceV1() {
