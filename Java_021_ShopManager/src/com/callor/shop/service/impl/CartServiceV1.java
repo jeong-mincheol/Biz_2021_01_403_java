@@ -9,9 +9,7 @@ import com.callor.shop.service.CartService;
 
 public class CartServiceV1 implements CartService {
 	
-	// 키보드에 값을 입력해서 사용할 수 있게 Scanner 클래스를 가져와 scan이라는 객체변수 선언
 	private Scanner scan;
-	// CartVO 클래스를 객체배열 변수 cartList 선언
 	private List<CartVO> cartList;
 	public CartServiceV1() {
 		scan = new Scanner(System.in);
