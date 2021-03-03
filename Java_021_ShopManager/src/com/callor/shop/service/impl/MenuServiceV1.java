@@ -28,6 +28,7 @@ public class MenuServiceV1 implements MenuService {
 			// 내용을 입력하고 그 내용을 strMenu 문자열형 변수 strMenu를 선언
 			String strMenu = scan.nextLine();
 			// 입력한 문자열과 QUIT를 비교해서 같으면 끝낸다
+			// 문자열끼리 비교할떄는 문자열.equals(비교할문자열) 을 사용
 			if(strMenu.equals("QUIT")) {
 				break;
 			}

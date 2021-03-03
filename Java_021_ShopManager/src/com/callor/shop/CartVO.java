@@ -2,8 +2,8 @@ package com.callor.shop;
 
 public class CartVO {
 	
-	// 장바구니에 필요한 데이터 인스턴스 변수 선언 : 추상화
-	// 인스턴스 변수 priavte화 : 은닉
+	// 장바구니에 필요한 데이터 인스턴스 변수 선언 
+	// 인스턴스 변수 priavte화 
 	private String userName;
 	private String productName;
 	private String date;
@@ -11,7 +11,7 @@ public class CartVO {
 	private int qty;
 	private int price;
 	private int total;
-	// private화 한 인스턴스 변수들에 값을 저장하고 내보내는 getter & setter
+	// private화 한 인스턴스 변수들에 값을 저장하고 내보낼 수 있게 하기
 	public String getUserName() {
 		return userName;
 	}

@@ -11,7 +11,7 @@ public class CartServiceV1 implements CartService {
 	
 	// 키보드에 값을 입력해서 사용할 수 있게 Scanner 클래스를 가져와 scan이라는 객체변수 선언
 	private Scanner scan;
-	// CartVO 클래스를 객체배열 변수 cartList로 선언
+	// CartVO 클래스를 객체배열 변수 cartList 선언
 	private List<CartVO> cartList;
 	public CartServiceV1() {
 		scan = new Scanner(System.in);
@@ -40,12 +40,12 @@ public class CartServiceV1 implements CartService {
 				// 문자열형 변수를 정수형으로 바꾸어 변수intPrice로 값을 저장
 				intPrice = Integer.valueOf(strPrice);
 				if(intPrice < 1) {
-					System.out.println("가격은 1원이상 !!!");
+					System.out.println("가격은 1원이상 ");
 				} else {
 					break;
 				}
 			} catch (Exception e) {
-				System.out.println("가격은 숫자로만 !!!");
+				System.out.println("가격은 숫자로만 ");
 			}
 		} // 단가 while end
 		
@@ -58,17 +58,16 @@ public class CartServiceV1 implements CartService {
 				// strQty에 담긴 값을 정수형으로 바꾸어 intQty에 저장
 				intQty = Integer.valueOf(strQty);
 				if(intQty < 1) {
-					System.out.println("수량은 1개이상 !!!");
+					System.out.println("수량은 1개이상 ");
 				} else {
 					break;
 				}
 			} catch (Exception e) {
-				System.out.println("수량은 숫자로만 !!!");
+				System.out.println("수량은 숫자로만 ");
 			}
 		} // 수량 while end
-		// CartVO 클래스를 가져와 사용할 수 있는 cartVO 객체변수 선언
+		// CartList 정보생성
 		CartVO cartVO = new CartVO();
-		// 입력한 값들을 set을 통해 담아둔다
 		cartVO.setUserName(strUserName);
 		cartVO.setProductName(strProductName);
 		cartVO.setPrice(intPrice);
