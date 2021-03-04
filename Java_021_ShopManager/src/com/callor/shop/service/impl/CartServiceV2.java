@@ -7,20 +7,17 @@ import java.util.Scanner;
 import com.callor.shop.model.CartVO;
 import com.callor.shop.service.CartService;
 
-public class CartServiceV1 implements CartService {
+public class CartServiceV2 implements CartService {
 	
-	// 인스턴스 변수에 생성하는것과 선언하는것이 나뉜 이유는
-	// 메모리 관리 때문인데
 	private Scanner scan;
 	private List<CartVO> cartList;
-	public CartServiceV1() {
+	public CartServiceV2() {
 		scan = new Scanner(System.in);
 		cartList = new ArrayList<CartVO>();
 	}
 	
 
 	@Override
-	// 장바구니에 상품 담기
 	public void inputCart() {
 		System.out.println("장바구니에 넣기");
 		System.out.print("구매자 >> ");

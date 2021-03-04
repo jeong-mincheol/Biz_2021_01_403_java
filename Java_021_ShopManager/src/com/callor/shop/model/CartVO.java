@@ -1,4 +1,4 @@
-package com.callor.shop;
+package com.callor.shop.model;
 
 public class CartVO {
 	
