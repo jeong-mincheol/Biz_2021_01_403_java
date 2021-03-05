@@ -36,6 +36,7 @@ public class CartServiceImplV3 extends CartServiceImplV1 implements CartServiceV
 			printer.println("Republic of Korea");
 			
 			printer.close();
+			fileWriter.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

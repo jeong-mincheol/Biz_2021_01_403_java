@@ -10,6 +10,20 @@ public class CartVO {
 	private int price;
 	private int total;
 	
+	// 매개변수가 있는 생성자를 만들게 되면 
+	// 매개변수가 없는 "기본" 생성자를 임의로 반드시 만들어 주어야 한다
+	public CartVO() {
+	}
+	
+	public CartVO(String userName, String pName, int qty, int price) {
+		this.UserName = userName;
+		this.productName = pName;
+		this.qty = qty;
+		this.price = price;
+		
+	}
+
+	
 	public String getUserName() {
 		return UserName;
 	}
