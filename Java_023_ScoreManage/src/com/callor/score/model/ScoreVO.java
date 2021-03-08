@@ -2,8 +2,6 @@ package com.callor.score.model;
 
 public class ScoreVO {
 	
-	private String strOrder;
-	private String strSubject;
 	private int intKor;
 	private int intEng;
 	private int intMath;
@@ -13,14 +11,11 @@ public class ScoreVO {
 	private int intTotal;
 	private float floatAvg;
 	
-	
 	public ScoreVO() {
 	}
 	
-	public ScoreVO(String strOrder, String strSubject,
-			int intKor, int intEng, int intMath, int intMusic, int intHistory) {
-		this.strOrder = strOrder;
-		this.strSubject = strSubject;
+	public ScoreVO(int intKor, int intEng, int intMath, int intMusic, int intHistory) {
+		super();
 		this.intKor = intKor;
 		this.intEng = intEng;
 		this.intMath = intMath;
@@ -28,18 +23,6 @@ public class ScoreVO {
 		this.intHistory = intHistory;
 	}
 
-	public String getStrOrder() {
-		return strOrder;
-	}
-	public void setStrOrder(String strOrder) {
-		this.strOrder = strOrder;
-	}
-	public String getStrSubject() {
-		return strSubject;
-	}
-	public void setStrSubject(String strSubject) {
-		this.strSubject = strSubject;
-	}
 	public int getIntKor() {
 		return intKor;
 	}
@@ -84,10 +67,10 @@ public class ScoreVO {
 	}
 	@Override
 	public String toString() {
-		return "ScoreVO [strOrder=" + strOrder + ", strSubject=" + strSubject + ", intKor=" + intKor + ", intEng="
-				+ intEng + ", intMath=" + intMath + ", intMusic=" + intMusic + ", intHistory=" + intHistory
-				+ ", intTotal=" + intTotal + ", floatAvg=" + floatAvg + "]";
+		return "ScoreVO [intKor=" + intKor + ", intEng=" + intEng + ", intMath=" + intMath + ", intMusic=" + intMusic
+				+ ", intHistory=" + intHistory + ", intTotal=" + intTotal + ", floatAvg=" + floatAvg + "]";
 	}
+	
 	
 
 }
