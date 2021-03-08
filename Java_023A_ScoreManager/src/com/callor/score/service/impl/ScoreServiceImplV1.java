@@ -172,7 +172,7 @@ public class ScoreServiceImplV1 implements ScoreService{
 						Integer.valueOf(scores[2]), // eng
 						Integer.valueOf(scores[3]), // math
 						Integer.valueOf(scores[4]), // music
-						Integer.valueOf(scores[1]) // history
+						Integer.valueOf(scores[5]) // history
 						);
 				scoreList.add(vo);
 			}
