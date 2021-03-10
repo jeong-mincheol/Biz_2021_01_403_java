@@ -1,5 +1,7 @@
 package com.callolr.student;
 
+import java.util.Scanner;
+
 /*
  * ====================
  * 구구단 7단
@@ -16,6 +18,22 @@ package com.callolr.student;
  * =================== 
  */
 public class Ex_10 {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("2 ~ 9사이의 정수를 입력하세요 >> ");
+		int n = scan.nextInt();
+		
+		System.out.println("=============");
+		System.out.println("구구단 " + n + "단");
+		System.out.println("-------------");
+		for(int i = 1 ; i < 10 ; i++) {
+			System.out.println(n + " x " + i + " = " + n*i);
+		}
+		System.out.println("=============");
+		
+	}
 	
 
 }
